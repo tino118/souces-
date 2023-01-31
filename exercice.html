@@ -1,0 +1,806 @@
+
+<html class=" is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" lang="fr-fr" dir="ltr" data-css-variable-support="true" data-authenticated="false" data-auth-status-determined="false" data-target="docs" x-ms-format-detection="none">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:title" content="Exercice - Démarrer un projet - Training" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://learn.microsoft.com/fr-fr/training/modules/create-git-project/2-exercise-start-project" />
+			<meta property="og:description" content="Ajoutez un fichier dans Git et effectuez votre premier commit." />
+
+	<meta property="og:image" content="https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png" />
+
+	<meta property="og:image:alt" content="Microsoft Logo" />
+
+	<meta name="twitter:card" content="summary" />
+
+	<meta name="twitter:site" content="@docsmsft" />
+
+	<meta name="color-scheme" content="light dark">
+
+
+	<meta name="author" content="mshumba" />
+<meta name="azure_sandbox" content="false" />
+<meta name="breadcrumb_path" content="/learn/breadcrumb/toc.json" />
+<meta name="clicktale" content="true" />
+<meta name="depot_name" content="Docs.learn-pr" />
+<meta name="description" content="Ajoutez un fichier dans Git et effectuez votre premier commit." />
+<meta name="document_id" content="c14fadf1-5247-2557-907a-bde4f57505fc" />
+<meta name="document_version_independent_id" content="736263e4-4bb5-aaf6-ffdb-8ee0f1c20ba5" />
+<meta name="gitcommit" content="https://github.com/MicrosoftDocs/learn-pr/blob/3e0b5ea8337962ce6d7703bef398219af729da0b/learn-pr/student-evangelism/create-git-project/2-exercise-start-project.yml" />
+<meta name="loc_file_id" content="Github-126092861.live.Docs.learn-pr.student-evangelism/create-git-project/2-exercise-start-project.yml" />
+<meta name="loc_group_id" content="Github-126092861.live.Docs.learn-pr.student-evangelism/create-git-project/index.yml" />
+<meta name="loc_group_version" content="2022-07-05T17:30:38.3773799Z" />
+<meta name="loc_source_id" content="Github-126092861#live" />
+<meta name="loc_version" content="2022-07-05T17:30:38.3773799Z" />
+<meta name="locale" content="fr-fr" />
+<meta name="localization_scopes" content="de-de" />
+<meta name="localization_scopes" content="es-es" />
+<meta name="localization_scopes" content="fr-fr" />
+<meta name="localization_scopes" content="it-it" />
+<meta name="localization_scopes" content="ru-ru" />
+<meta name="localization_scopes" content="pt-br" />
+<meta name="localization_scopes" content="ja-jp" />
+<meta name="localization_scopes" content="ko-kr" />
+<meta name="localization_scopes" content="zh-cn" />
+<meta name="localization_scopes" content="zh-tw" />
+<meta name="localization_scopes" content="cs-cz" />
+<meta name="localization_scopes" content="hu-hu" />
+<meta name="localization_scopes" content="nl-nl" />
+<meta name="localization_scopes" content="pl-pl" />
+<meta name="localization_scopes" content="pt-pt" />
+<meta name="localization_scopes" content="tr-tr" />
+<meta name="localization_scopes" content="sv-se" />
+<meta name="ms.author" content="chnoring" />
+<meta name="ms.contentlocale" content="fr-fr" />
+<meta name="ms.custom" content="team=nextgen" />
+<meta name="ms.date" content="10/08/2021" />
+<meta name="ms.prod" content="learning-git" />
+<meta name="ms.topic" content="interactive-tutorial" />
+<meta name="ms.translationtype" content="HT" />
+<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/student-evangelism/create-git-project/2-exercise-start-project.yml" />
+<meta name="page_kind" content="unit" />
+<meta name="page_type" content="learn" />
+<meta name="ROBOTS" content="noindex" />
+<meta name="sandbox" content="false" />
+<meta name="schema" content="ModuleUnit" />
+<meta name="site_name" content="Docs" />
+<meta name="uhfHeaderId" content="MSDocsHeader-Learn" />
+<meta name="uid" content="learn.student-evangelism.create-git-project.exercise-start-project" />
+<meta name="unit_completion_type" content="view" />
+<meta name="updated_at" content="2023-01-07 02:23 PM" />
+
+
+
+
+
+	<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/student-evangelism/create-git-project/2-exercise-start-project.yml" />
+<link href="https://learn.microsoft.com/fr-fr/training/modules/create-git-project/2-exercise-start-project" rel="canonical">
+	<title>Exercice - Démarrer un projet - Training | Microsoft Learn</title>
+
+		<link rel="stylesheet" href="/_themes/docs.theme/master/fr-fr/_themes/styles/f16c3189.site-ltr.css ">
+
+	
+
+	<script id="msdocs-script">
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'fr-fr',
+			contentDir: 'ltr',
+			userLocale: 'fr-fr',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			hasRecommendations: false,
+			contributors: [
+						{ name: "craigcaseyMSFT", url: "https://github.com/craigcaseyMSFT" },
+						{ name: "v-andreaco", url: "https://github.com/v-andreaco" }
+],
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+	</script>
+	<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+	<script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js"></script>
+
+	<script src="/_themes/docs.theme/master/fr-fr/_themes/global/67a45209.deprecation.js"></script>
+		<script src="/_themes/docs.theme/master/fr-fr/_themes/scripts/12756dab.index-docs.js"></script>
+</head>
+
+<body lang="fr-fr" dir="ltr">
+	<div class="header-holder has-default-focus">
+		<a href="#main" class="skip-to-main-link has-outline-color-text visually-hidden-until-focused position-fixed has-inner-focus focus-visible top-0 left-0 right-0 padding-xs has-text-centered has-body-background" tabindex="1">Passer au contenu principal</a>
+
+		<div hidden id="cookie-consent-holder"></div>
+
+		<div id="unsupported-browser" style="
+			background-color: white;
+			color: black;
+			padding: 16px;
+			border-bottom: 1px solid grey;"
+			hidden
+		>
+			<div style="max-width: 800px; margin: 0 auto;">
+				<p style="font-size: 24px">Ce navigateur n’est plus pris en charge.</p>
+				<p style="font-size: 16px; margin-top: 16px;">Effectuez une mise à niveau vers Microsoft Edge pour tirer parti des dernières fonctionnalités, des mises à jour de sécurité et du support technique.</p>
+				<div style="margin-top: 12px;">
+					<a href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 "
+						style="
+						background-color: #0078d4;
+						border: 1px solid #0078d4;
+						color: white;
+						padding: 6px 12px;
+						border-radius: 2px;
+						display: inline-block;
+						">
+Télécharger Microsoft Edge					</a>
+					<a href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge"
+						style="
+							background-color: white;
+							padding: 6px 12px;
+							border: 1px solid #505050;
+							color: #171717;
+							border-radius: 2px;
+							display: inline-block;
+							">
+Plus d’informations sur Internet Explorer et Microsoft Edge					</a>
+				</div>
+			</div>
+
+		</div>
+		<!-- liquid-tag banners global -->
+		<div id="headerAreaHolder" data-bi-name="header">
+<header role="banner" itemscope="itemscope" itemtype="http://schema.org/Organization">
+	<div class="nav-bar">
+		<div class="nav-bar-brand">
+			<a itemprop="url" href="https://www.microsoft.com" aria-label="Microsoft" class="nav-bar-button">
+				<div class="nav-bar-logo has-background-image theme-display is-light" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope"></div>
+				<div class="nav-bar-logo has-background-image theme-display is-dark is-high-contrast" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope"></div>
+			</a>
+		</div>
+	</div>
+	<div class="nav-bar border-top is-hidden-mobile"></div>
+</header>		</div>
+
+
+			<div id="content-header" class="content-header uhf-container has-padding has-default-focus border-bottom-none" data-bi-name="content-header">
+				<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+					<button type="button" class="contents-button button button-sm margin-right-xxs" data-bi-name="contents-expand" aria-haspopup="true" data-contents-button>
+						<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+						<span class="contents-expand-title">
+Table des matières						</span>
+					</button>
+					<button type="button" class="ap-collapse-behavior ap-expanded button button-sm" data-bi-name="ap-collapse" aria-controls="action-panel">
+						<span class="icon"><span class="docon docon-exit-mode" aria-hidden="true"></span></span>
+						<span>Quitter le mode focus</span>
+					</button>
+				</div>
+			</div>
+
+		<div id="disclaimer-holder" class="has-overflow-hidden has-default-focus">
+			<!-- liquid-tag banners sectional -->
+		</div>
+	</div>
+
+	<div class="mainContainer  uhf-container has-body-background-dark uhf-container is-full  has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps is-gapless-mobile  is-gapless">
+
+
+			<!-- .primary-holder -->
+			<section class="primary-holder column  is-full ">
+				<!--div.columns -->
+				<div class="columns is-gapless-mobile has-large-gaps  is-gapless">
+
+
+					<div id="main-column" class="column  is-full ">
+
+						<main id="main" role="main" data-bi-name="content" lang="fr-fr" dir="ltr">
+							<!-- article-header -->
+							<div id="article-header" class="background-color-body  display-none-print">
+								<div class="display-flex align-items-center uhf-container">
+									<details id="article-header-breadcrumbs-overflow-popover" class="popover" data-for="article-header-breadcrumbs">
+										<summary class="button button-clear button-primary button-sm" aria-label="Toutes les barres de navigation">
+											<span class="icon">
+												<span class="docon docon-more"></span>
+											</span>
+										</summary>
+										<div id="article-header-breadcrumbs-overflow" class="popover-content padding-none">
+
+										</div>
+									</details>
+									<bread-crumbs id="article-header-breadcrumbs" class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop" id="page-breadcrumbs"></bread-crumbs>
+
+									<div id="article-header-page-actions"  class="opacity-none margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch">
+
+										<a
+											id="lang-link-tablet"
+											class="button button-primary button-clear button-sm display-none display-inline-flex-tablet"
+											title="Lire en anglais" data-bi-name="language-toggle"
+											data-read-in-link
+											hidden>
+											<span class="icon margin-none" aria-hidden="true" data-read-in-link-icon>
+												<span class="docon docon-locale-globe"></span>
+											</span>
+											<span class="is-visually-hidden" data-read-in-link-text>Lire en anglais</span>
+										</a>
+
+											<button
+												type="button"
+												class="collection button button-clear button-sm button-primary display-none display-inline-flex-tablet"
+												data-list-type="collection"
+												data-bi-name="collection"
+												title="Ajouter à la collection">
+												<span class="icon margin-none" aria-hidden="true">
+													<span class="docon docon-circle-addition"></span>
+												</span>
+												<span class="collection-status is-visually-hidden">Enregistrer</span>
+											</button>
+										
+
+										
+
+
+										
+										<details class="popover popover-right" id="article-header-page-actions-overflow">
+											<summary class="justify-content-flex-start button button-clear button-sm button-primary" aria-label="Autres actions">
+												<span class="icon" aria-hidden="true">
+													<span class="docon docon-more-vertical"></span>
+												</span>
+											</summary>
+											<div class="popover-content padding-none">
+
+												<a
+													id="lang-link-overflow"
+													class="justify-content-flex-start button-sm has-inner-focus button button-clear button-block display-none-tablet"
+													title="Lire en anglais" data-bi-name="language-toggle"
+													data-page-action-item="overflow-mobile"
+													data-check-hidden="true"
+													data-read-in-link
+													hidden
+													>
+													<span class="icon" aria-hidden="true" data-read-in-link-icon>
+														<span class="docon docon-locale-globe"></span>
+													</span>
+													<span data-read-in-link-text>Lire en anglais</span>
+												</a>
+
+													<button
+														type="button"
+														class="collection justify-content-flex-start button button-clear button-sm has-inner-focus button-block display-none-tablet"
+														data-list-type="collection"
+														data-bi-name="collection"
+														title="Ajouter à la collection"
+														data-page-action-item="overflow-mobile"
+														data-check-hidden="true"
+														data-popover-close>
+														<span class="icon" aria-hidden="true">
+															<span class="docon docon-circle-addition"></span>
+														</span>
+														<span class="collection-status">Enregistrer</span>
+													</button>
+
+
+
+												
+											</div>
+										</details>
+										
+									</div>
+								</div>
+							</div>
+							<!-- end article-header -->
+
+
+							<div class="">
+								<button type="button" class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" aria-label="Contenu" data-bi-name="contents-expand" data-contents-button hidden>
+									<span class="icon">
+										<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+									</span>
+									<span class="contents-expand-title">Table des matières</span>
+								</button>
+							</div>
+
+							<!-- end mobile-contents button  -->
+
+							<div class="content ">
+
+<div class="modular-content-container" data-target="docs">
+    <nav class="pagination is-centered is-wide" role="navigation" aria-label="pagination" data-bi-name="module-nav">
+        <a class="is-invisible pagination-previous button button-clear text-decoration-none is-hidden-portrait has-inner-focus" data-bi-name="previous-unit" id="previous-unit-link">
+            <span aria-hidden="true" class="icon docon docon-chevron-left-light"></span>
+            <span>Précédent</span>
+        </a>
+        <ul class="pagination-list">
+            <li class="dropdown has-centered-menu has-caret" data-bi-name="unit-menu">
+                <button aria-controls="module-menu" aria-expanded="false" class="pagination-link margin-inline-auto button button-clear text-decoration-none button-sm dropdown-trigger" data-bi-name="dropdown-trigger" title="Module menu">
+                    <span id="unit-place"></span>
+                    <span aria-hidden="true" class="icon">
+                        <span class="docon docon-chevron-down-light expanded-indicator"></span>
+                    </span>
+                </button>
+                <div class="dropdown-menu width-300 width-450-desktop" id="module-menu" role="menu"></div>
+            </li>
+        </ul>
+        <a class="is-invisible pagination-next button button-clear text-decoration-none is-hidden-portrait has-inner-focus" data-bi-name="next-unit" id="next-unit-link">
+            <span>Suivant</span>
+            <span aria-hidden="true" class="icon docon docon-chevron-right-light"></span>
+        </a>
+    </nav>
+</div>
+<div class="columns is-mobile is-gapless is-fixed-bottom is-hidden-tablet is-hidden-landscape has-body-background margin-none" id="mobile-nav">
+    <div class="column is-hidden" id="previous-unit-link-mobile-col">
+        <a class="button button-block button-filled is-radiusless button-lg margin-none has-inner-focus" data-bi-name="previous-unit" id="previous-unit-link-mobile">
+            <span aria-hidden="true" class="icon docon docon-chevron-left-light"></span>
+            <span>Précédent</span>
+        </a>
+    </div>
+    <div class="column is-hidden" id="next-unit-link-mobile-col">
+        <a class="button button-block button-filled button-primary button-lg is-radiusless margin-none has-inner-focus" data-bi-name="next-unit" id="next-unit-link-mobile">
+            <span>Suivant</span>
+            <span aria-hidden="true" class="icon docon docon-chevron-right-light"></span>
+        </a>
+    </div>
+</div>
+
+								
+
+
+
+								<!-- <content> -->
+									<div class="modular-content-container has-body-background box">
+	<div id="unit-inner-section" class="section is-uniform position-relative">
+		<h1 class="margin-right-xxl-desktop">Exercice - D&#233;marrer un projet</h1>
+		<div data-progress-uid="learn.student-evangelism.create-git-project.exercise-start-project" class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive">
+			<div class="xp-tag-hexagon">
+				<span class="xp-tag-icon is-shown-complete docon docon-check">
+					<span class="visually-hidden">Effectu&#233;</span>
+				</span>
+				<span class="xp-tag-xp"></span>
+			</div>
+		</div>
+		<ul class="metadata page-metadata">
+			<li>1&#160;minute</li>
+		</ul>
+			<p>Maintenant que vous avez appris à vous servir des principales commandes Git, vous pouvez passer à la création d’un projet dans Git.</p>
+<p>Dans les exercices qui suivent, vous allez commencer à utiliser Git en ajoutant un fichier HTML simple dans votre arbre de travail. Ensuite, vous allez apporter des changements au répertoire et apprendre à les commiter.</p>
+<h2 id="create-and-add-stage-a-file">Créer et ajouter (indexer) un fichier</h2>
+<p>Git ne peut pas faire grand-chose avec des répertoires vides. Nous allons donc ajouter un fichier à l’arbre de travail pour qu’il serve de page d’accueil pour le site web de photos de chat.</p>
+<ol>
+<li><p>Vérifiez que votre session Cloud Shell est toujours active et que vous vous trouvez dans le dossier nommé <em>Cats</em>.</p>
+</li>
+<li><p>Utilisez une commande <code>touch</code> pour créer un fichier nommé <em>index.html</em> :</p>
+<pre><code class="lang-bash">touch index.html
+</code></pre>
+<p><code>touch</code> met à jour l’heure de la dernière modification du fichier, si le fichier existe. Si le fichier n’existe pas, Git crée un fichier vide avec ce nom de fichier.</p>
+</li>
+<li><p>À présent, utilisez <code>git status</code> pour connaître l’état de l’arbre de travail :</p>
+<pre><code class="lang-bash">git status
+</code></pre>
+<p>Git répond en vous informant que rien n’a été commité, mais que le répertoire contient un nouveau fichier :</p>
+<pre><code class="lang-output">No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+    index.html
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre>
+<p>Notez que <code>git status</code> vous donne des conseils sur ce que vous pouvez faire ensuite. Git peut être configuré pour fournir moins de détails, mais à ce stade, il est préférable d’en avoir.</p>
+</li>
+<li><p>Utilisez <code>git add</code> pour ajouter le nouveau fichier dans l’<em>index</em> de Git, suivi de <code>git status</code> pour vérifier l’état. <em>N’oubliez pas le point à la fin de la commande</em>. Il indique à Git d’indexer tous les fichiers du répertoire actif qui ont été ajoutés ou modifiés.</p>
+<pre><code class="lang-bash">git add .
+</code></pre>
+<p>Un commit vient donc d’être indexé. L’index de Git est une zone d’indexation pour les commits. Il s’agit de la liste de toutes les versions de fichiers qui feront partie du <em>prochain</em> commit que vous effectuerez.</p>
+<p>Au lieu d’utiliser <code>git add .</code>, vous auriez pu utiliser <code>git add index.html</code> parce que <em>index.html</em> était le seul nouveau fichier présent dans le répertoire. Mais si plusieurs fichiers avaient été ajoutés, <code>git add .</code> les aurait tous traités.</p>
+</li>
+<li><p>Enfin, utilisez <code>git status</code> à nouveau pour vérifier que vos changements ont été indexés correctement :</p>
+<pre><code class="lang-bash">git status
+</code></pre>
+</li>
+<li><p>Vous devriez voir un résultat similaire à cet exemple :</p>
+<pre><code class="lang-output">On branch main
+
+Initial commit
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+
+    new file:   index.html
+</code></pre>
+</li>
+</ol>
+<h2 id="make-your-first-commit">Effectuer votre premier commit</h2>
+<p>Maintenant que <em>index.html</em> a été ajouté à l’index, l’étape suivante consiste à le commiter.</p>
+<ol>
+<li><p>Utilisez la commande suivante pour créer un commit :</p>
+<pre><code class="lang-bash">git commit index.html -m &quot;Create an empty index.html file&quot;
+</code></pre>
+<p>L’<em>indicateur</em><code>-m</code> de cette commande indique à Git que vous fournissez un message de commit.</p>
+<p>Il existe de nombreuses façons de rédiger un message de commit. Toutefois, il est préférable que la première ligne indique l’<em>effet du commit sur l’arbre</em>. Il est également courant d’utiliser une majuscule pour la première lettre et d’omettre le point de fermeture pour économiser de l’espace. Imaginez que la première ligne du message se termine par « Une fois envoyée, ce commit va... »</p>
+<p>Un message de commit peut comprendre plusieurs lignes. La première ligne ne doit pas comporter plus de 50 caractères et doit être suivie d’une ligne vide. Les lignes suivantes ne doivent pas comporter plus de 72 caractères. Ce ne sont pas des exigences fermes et définitives (elles datent de l’époque des cartes perforées et des terminaux passifs), mais elles rendent la sortie <code>git log</code> plus lisible.</p>
+</li>
+<li><p>Git répond avec une confirmation de votre action :</p>
+<pre><code class="lang-output">[main (root-commit) 87e874c] Create an empty index.html file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+</code></pre>
+</li>
+<li><p>Continuez avec la commande <code>git status</code> pour vérifier que l’arbre de travail est « propre », c’est-à-dire qu’il ne contient aucun changement non commité.</p>
+</li>
+<li><p>À présent, utilisez une commande <code>git log</code> pour afficher des informations sur le commit :</p>
+<pre><code class="lang-bash">git log
+</code></pre>
+</li>
+<li><p>La réponse de Git doit ressembler à cet exemple :</p>
+<pre><code class="lang-output">commit 87e874c4aeeb3f9692ae5d9875235353708d7dd5
+Author: User Name &lt;user-name@contoso.com&gt;
+Date:   Fri Nov 15 20:47:05 2019 +0000
+
+Create an empty index.html file
+</code></pre>
+</li>
+</ol>
+<h2 id="modify-indexhtml-and-commit-the-change">Modifier index.html et commiter le changement</h2>
+<p>Le fichier <em>index.html</em> a été créé pour servir de page d’accueil du site web, mais il est actuellement vide. L’étape suivante consiste à y ajouter du code HTML. Nous allons commencer par quelque chose de simple en utilisant l’éditeur intégré de Cloud Shell pour ajouter une seule ligne de code HTML.</p>
+<ol>
+<li><p>Ouvrez <em>index.html</em> dans l’éditeur en ligne en tapant <code>code index.html</code> à l’invite du terminal :</p>
+<pre><code class="lang-bash">code index.html
+</code></pre>
+</li>
+<li><p>Tapez ou collez les instructions suivantes dans l’éditeur :</p>
+<pre><code class="lang-html">&lt;h1&gt;Our Feline Friends&lt;/h1&gt;
+</code></pre>
+</li>
+<li><p>Enregistrez le fichier et fermez l’éditeur en ligne. Vous pouvez sélectionner les points de suspension « ... » dans le coin droit de l’éditeur Cloud Shell ou utiliser la touche de raccourci (Ctrl+S sur Windows et Linux, Cmd+S sur macOS).</p>
+</li>
+<li><p>Utilisez la commande <code>git status</code> pour vérifier l’état de l’arbre de travail :</p>
+<pre><code class="lang-bash">git status
+</code></pre>
+</li>
+<li><p>Vous pouvez voir que Git est au courant des changements que vous avez apportés :</p>
+<pre><code class="lang-output">On branch main
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+    modified:   index.html
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+</code></pre>
+</li>
+<li><p>Maintenant, commitez les changements :</p>
+<pre><code class="lang-bash">git commit -a -m &quot;Add a heading to index.html&quot;
+</code></pre>
+<p>Notez que nous n’avons pas exécuté la commande <code>git add</code> cette fois-ci pour indexer nos changements. Au lieu de cela, nous avons utilisé l’indicateur <code>-a</code> dans la commande <code>git commit</code>. L’option <code>-a</code> ajoute tous les fichiers que vous avez modifiés depuis le dernier commit.  Elle n’ajoutera pas les <em>nouveaux</em> fichiers. Pour ajouter de nouveaux fichiers, vous avez toujours besoin de <code>git add</code>.</p>
+</li>
+<li><p>Vérifiez la sortie. Elle doit être semblable à cet exemple :</p>
+<pre><code class="lang-output">[main 8c9143a] Add a heading to index.html
+ 1 file changed, 1 insertion(+)
+</code></pre>
+</li>
+</ol>
+<p>Le changement apporté à <em>index.html</em> a été commité. Il existe maintenant deux versions du fichier dans le dépôt, même si vous n’en voyez qu’une seule (la version actuelle). L’un des avantages de Git est qu’il vous permet de restaurer les changements que vous avez apportés, ou de remonter le temps pour voir les versions précédentes. Nous en saurons plus sur ce sujet important un peu plus tard.</p>
+
+		<div id="next-section" class="modular-content-container is-hidden is-hidden-portrait">
+			<p id="next-module" class="margin-top-none"></p>
+			<p>
+				<a href="/fr-fr/" class="button button-primary button-clear" data-linktype="absolute-path">
+				<span>Continuer </span>
+				<span class="docon docon-chevron-right-light"></span>
+				</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+							</div>
+
+							<div id="assertive-live-region" role="alert" aria-live="assertive" class="visually-hidden" aria-relevant="additions" aria-atomic="true"></div>
+							<div id="polite-live-region" role="status" aria-live="polite" class="visually-hidden" aria-relevant="additions" aria-atomic="true"></div>
+							<!-- </content> -->
+
+						</main>
+
+<div class="modular-content-container margin-block-xs">
+	<section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+		<p class="font-weight-semibold">
+Besoin d'aide ? Consultez notre <a id="troubleshooting-guide" class="has-text-primary" data-bi-name="troubleshooting">guide de résolution des défis</a> ou fournissez des commentaires spécifiques en <a id="module-unit-feedback-link" class="has-text-primary" data-bi-name="feedback">signalant un défi</a>.		</p>
+	</section>
+</div>
+
+<div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+	<section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+	</section>
+</div>
+
+
+						<!-- recommendations section -->
+						<!-- end recommendations section -->
+
+						<!-- feedback section -->
+						<!-- end feedback section -->
+
+						<!-- feedback report section -->
+						<!-- end feedback report section -->
+
+
+						<div class="border-top is-visible-interactive has-default-focus margin-top-sm  margin-top-none">
+
+
+
+	<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+	<div class="display-flex is-full-height padding-right-lg-desktop">
+			<a
+				data-mscc-ic="false"
+				class="locale-selector-link button button-clear flex-shrink-0"
+				href="#"
+				data-bi-name="select-locale">
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-world"></span>
+					</span>
+					<span class="local-selector-link-text"></span></a>
+		<div class="margin-inline-xs flex-shrink-0">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button button-clear button-sm has-inner-focus theme-dropdown-trigger"
+		aria-controls="theme-menu-interactive" aria-expanded="false" title="Thème" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>Thème</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu-interactive" role="menu">
+		<ul class="theme-selector padding-xxs" role="none">
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="light">
+					<span class="theme-light margin-right-xxs">
+						<span
+							class="theme-selector-icon css-variable-support border display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+Clair					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="dark">
+					<span class="theme-dark margin-right-xxs">
+						<span
+							class="border theme-selector-icon css-variable-support display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+Sombre					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="high-contrast">
+					<span class="theme-high-contrast margin-right-xxs">
+						<span
+							class="border theme-selector-icon css-variable-support display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+Contraste élevé					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+		</div>
+	</div>
+	<ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden></li>
+				<li><a data-mscc-ic="false" href="/fr-fr/previous-versions/" data-bi-name="archivelink">Versions antérieures</a></li>
+				<li><a data-mscc-ic="false" href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog" data-bi-name="bloglink">Blog</a></li>
+				<li><a data-mscc-ic="false" href="/fr-fr/contribute/" data-bi-name="contributorGuide">Collaboration</a></li>
+					<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Confidentialité</a></li>
+				<li><a data-mscc-ic="false" href="/fr-fr/legal/termsofuse" data-bi-name="termsofuse">Conditions d'utilisation</a></li>
+				<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?linkid=2121428" data-bi-name="conformanceDisclosure ">Accessibilité</a></li>
+				<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Marques</a></li>
+		<li>&copy; Microsoft 2023</li>
+	</ul>
+</footer>
+						</div>
+
+					</div>
+
+
+				</div>
+				<!--end of div.columns -->
+
+			</section>
+			<!--end of .primary-holder -->
+
+			<!-- interactive container -->
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+			<!-- end of interactive container -->
+		</div>
+
+	</div>
+	<!--end of .mainContainer -->
+
+	<section class="border-top has-default-focus is-hidden-interactive margin-top-sm  margin-top-none">
+
+
+
+	<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+	<div class="display-flex is-full-height padding-right-lg-desktop">
+			<a
+				data-mscc-ic="false"
+				class="locale-selector-link button button-clear flex-shrink-0"
+				href="#"
+				data-bi-name="select-locale">
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-world"></span>
+					</span>
+					<span class="local-selector-link-text"></span></a>
+		<div class="margin-inline-xs flex-shrink-0">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button button-clear button-sm has-inner-focus theme-dropdown-trigger"
+		aria-controls="theme-menu" aria-expanded="false" title="Thème" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>Thème</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu" role="menu">
+		<ul class="theme-selector padding-xxs" role="none">
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="light">
+					<span class="theme-light margin-right-xxs">
+						<span
+							class="theme-selector-icon css-variable-support border display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+Clair					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="dark">
+					<span class="theme-dark margin-right-xxs">
+						<span
+							class="border theme-selector-icon css-variable-support display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+Sombre					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="high-contrast">
+					<span class="theme-high-contrast margin-right-xxs">
+						<span
+							class="border theme-selector-icon css-variable-support display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+Contraste élevé					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+		</div>
+	</div>
+	<ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden></li>
+				<li><a data-mscc-ic="false" href="/fr-fr/previous-versions/" data-bi-name="archivelink">Versions antérieures</a></li>
+				<li><a data-mscc-ic="false" href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog" data-bi-name="bloglink">Blog</a></li>
+				<li><a data-mscc-ic="false" href="/fr-fr/contribute/" data-bi-name="contributorGuide">Collaboration</a></li>
+					<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Confidentialité</a></li>
+				<li><a data-mscc-ic="false" href="/fr-fr/legal/termsofuse" data-bi-name="termsofuse">Conditions d'utilisation</a></li>
+				<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?linkid=2121428" data-bi-name="conformanceDisclosure ">Accessibilité</a></li>
+				<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Marques</a></li>
+		<li>&copy; Microsoft 2023</li>
+	</ul>
+</footer>
+	</section>
+
+		<script src="/static/third-party/MathJax/2.7.2/MathJax.js?config=TeX-AMS_CHTML" integrity="sha384-RLsAi7wiVvnmHrRjlVvUjU45C0bfsIBg6Gsxue6azjJi+lA5q5uK+XbGzO3yn5g1" crossorigin="anonymous"></script>
+	<div id="action-panel" role="region" aria-label="Volet des actions" class="action-panel has-default-focus" tabindex="-1"></div>
+</body>
+</html>
